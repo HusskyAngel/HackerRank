@@ -26,25 +26,52 @@ string split(string s){
     for (char x : s){
         if (x<91){//ascii code
             aux_return.push_back(' ');
-            aux_return.push_back(x+32);
+            aux_return.push_back(x);
         }
     }
     return aux_return;
 }
 //secondary options 
-string classOption(string s){
+string classOption(string s, char option){
 
 }
-string methodOption(string s){
+string methodOption(string s, char option){
 
 }
-string varOption(string s){
+string varOption(string s, char option){
 
 }
+
+
 
 
 int main(int argc,char ** argv){
-	    	
+    string s;
+    cin>>s;	    	
+    char *options=searchOptions(s);
+    s=splitOptions(s);
+
+    if (options[0]=='S'){
+        s=split(s);
+        if (options[1]=='C'){
+
+        }else if(options[1]=='M'){
+
+        }else{
+
+        }
+
+    }else{
+        if (options[1]=='C'){
+
+        }else if(options[1]=='M'){
+
+        }else{
+
+        }
+    }
+
+    cout<<s;
 	return 0;
 }
 
